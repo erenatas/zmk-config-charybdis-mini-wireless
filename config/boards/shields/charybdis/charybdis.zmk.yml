@@ -4,6 +4,7 @@ name: Charybdis
 type: shield
 url: https://github.com/Bastardkb/Charybdis/
 requires: [pro_micro]
+studio: true
 features:
   - keys
   - pointer
