@@ -1,9 +1,10 @@
 #include <behaviors/mouse_keys.dtsi>
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define U_TAPPING_TERM 200
 
@@ -124,10 +125,10 @@
 
         SYMNUM {
             bindings = <
-&bt BT_CLR  &kp EXCL      &kp AT       &kp HASH    &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS                 &kp KP_MULTIPLY   &kp LPAR              &kp RPAR              &kp DEL
-&trans      &trans        &bt BT_PRV   &bt BT_NXT  &trans    &trans       &kp UNDER  &u_mt RIGHT_SHIFT EQUAL  &u_mt RCTRL LBKT  &u_mt RIGHT_ALT RBKT  &u_mt RIGHT_GUI BSLH  &kp GRAVE
-&trans      &out OUT_TOG  &bootloader  &trans      &trans    &trans       &kp MINUS  &kp PLUS                 &kp LBRC          &kp RBRC              &kp PIPE              &kp TILDE
-                                       &trans      &trans    &mo 3        &trans     &trans
+&bt BT_CLR  &kp EXCL      &kp AT       &kp HASH    &kp DLLR  &kp PRCNT    &bt BT_CLR  &kp AMPS                 &kp KP_MULTIPLY  &kp LPAR    &kp RPAR              &kp DEL
+&trans      &trans        &bt BT_PRV   &bt BT_NXT  &trans    &trans       &kp UNDER   &u_mt RIGHT_SHIFT EQUAL  &bt BT_PRV       &bt BT_NXT  &u_mt RIGHT_GUI BSLH  &kp GRAVE
+&trans      &out OUT_TOG  &bootloader  &trans      &trans    &trans       &kp MINUS   &kp PLUS                 &kp LBRC         &kp RBRC    &kp PIPE              &kp TILDE
+                                       &trans      &trans    &mo 3        &trans      &trans
             >;
         };
 
